@@ -7,5 +7,4 @@ using namespace std;
 void Date::show()
 {
 	cout << day << "." << month << "." << year << endl;
-
 }
