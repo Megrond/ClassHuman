@@ -80,6 +80,28 @@ public:
 		this->id = id;
 		return *this;
 	}
+	Human& setFamilia(char const* familia)
+	{
+		strcpy_s(this->familia, strlen(familia) + 1, familia);
+		return *this;
+	}
+	Human& setName(char const* name)
+	{
+		strcpy_s(this->name, strlen(name) + 1, name);
+		return *this;
+	}
+	Human& setOtchestvo(char const* otchestvo)
+	{
+		strcpy_s(this->otchestvo, strlen(otchestvo) + 1, otchestvo);
+		return *this;
+	}
+	Human& setDate(unsigned short day, unsigned short month, unsigned short year)
+	{
+		birthday.setDay(day).setMonth(month).setYear(year);
+		return *this;
+	}
+	void showHuman();
+
 
 };
-unsigned int Human::count_instance{0};
+

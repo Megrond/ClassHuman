@@ -4,6 +4,8 @@
 
 using namespace std;
 
+unsigned int Human::count_instance{ 0 };
+
 int main()
 {
 	setlocale(LC_ALL, "RU");
@@ -12,7 +14,8 @@ int main()
 	Human y{ x };
 
 	cout << "Кол-во " << Human::getCountInstance() << endl;
-	
+	x.showHuman();
+
 	return 0;
 };
 
