@@ -59,9 +59,26 @@ public:
 	{
 		return id;
 	}
-	char* const getFamilia()
+	char const* getFamilia()
 	{
 		return familia;
+	}
+	char const* getName()
+	{
+		return name;
+	}
+	char const* getOtchestvo()
+	{
+		return otchestvo;
+	}
+	Date const* getDate()
+	{
+		return &birthday;
+	}
+	Human& setId(int id)
+	{
+		this->id = id;
+		return *this;
 	}
 
 };
