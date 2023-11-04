@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <Windows.h>
 #include "Human.h"
 
@@ -10,11 +10,11 @@ int main()
 {
 	setlocale(LC_ALL, "RU");
 	Date birthday(18, 7, 1989);
-	Human x("Ромашов", "Виктор", "Викторович", birthday);
+	Human x("Р РѕРјР°С€РѕРІ", "Р’РёРєС‚РѕСЂ", "Р’РёРєС‚РѕСЂРѕРІРёС‡", birthday);
 	Human y{ x };
 
-	y.setName("Дмитрий");
-	cout << "Кол-во объектов: " << Human::getCountInstance() << endl;
+	y.setName("Р”РјРёС‚СЂРёР№");
+	cout << "РљРѕР»-РІРѕ РѕР±СЉРµРєС‚РѕРІ: " << Human::getCountInstance() << endl;
 	x.showHuman();
 	y.showHuman();
 

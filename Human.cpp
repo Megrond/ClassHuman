@@ -1,4 +1,4 @@
-#include "Human.h"
+ï»¿#include "Human.h"
 #include <iostream>
 #include <Windows.h>
 
@@ -14,7 +14,7 @@ char* Human::createName(const char* name)
 void Human::showHuman()
 {
 	cout << "Id: " << id << endl;
-	cout << "ÔÈÎ: " << familia << " " << name << " " << otchestvo << endl;
+	cout << "Ð¤Ð˜Ðž: " << familia << " " << name << " " << otchestvo << endl;
 	birthday.show();
 	cout << endl;
 }
